@@ -8,6 +8,12 @@ class Student
     @id = id
   end
 
+  def create_table
+  end
+
+  def drop_table
+  end 
+
 end
 
 # Remember, you can access your database connection anywhere in this class
