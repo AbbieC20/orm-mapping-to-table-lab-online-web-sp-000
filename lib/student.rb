@@ -35,6 +35,8 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade)
 
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
+    # Grabbing the ID of that newly inserted row and assigning the given Song
+    # instance's id attribute equal to the ID of its associated database table row.
   end
 
 end
