@@ -39,7 +39,10 @@ class Student
     # instance's id attribute equal to the ID of its associated database table row.
   end
 
-  def self.create
+  def self.create(name, grade)
+    student = Student.new(name, grade)
+    student.save
+    student
   end
 
 end
